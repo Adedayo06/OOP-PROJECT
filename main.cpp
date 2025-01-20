@@ -1,9 +1,6 @@
 #include "library.h"
 #include "book_item.h"
 #include "patron.h"
-#include "patron_record.h"
-#include "library_item.h"
-#include "book.h"
 #include <iostream>
 #include <string>
 

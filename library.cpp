@@ -1,5 +1,6 @@
 #include "library.h"
 #include <iostream>
+#include <vector>
 
 
 void Library::addBook(const BookItem& book) {
@@ -18,7 +19,7 @@ void Library::borrowBook(const std::string& isbn, const std::string& patronCardN
 
     if (bookIt != books.end() && !bookIt->getIsCheckedOut()) {
         bookIt->checkOut("01-01-2025"); 
-        for (size_t i = 0; i < patrons.size(); ++i) {
+        for (int  i = 0; i < patrons.size(); ++i) {
             if (patrons[i].getLibraryCardNumber() == patronCardNumber) {
                 patronRecords[i].addBook(*bookIt);
                 break;

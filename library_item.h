@@ -13,7 +13,7 @@ private:
 
 public:
     
-    LibraryItem(const std::string& title,const std::string& author, const std::string& ISBN){};
+    LibraryItem(const std::string& title,const std::string& author, const std::string& isbn){};
      
     std::string getTitle() const{return title;};
     bool getIsCheckedOut() const{return isCheckedOut;};
