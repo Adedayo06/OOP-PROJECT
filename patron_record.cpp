@@ -7,17 +7,6 @@ void PatronRecord::addBook(const BookItem& book) {
     std::cout << "Added book to patron's record: " << book.getTitle() << std::endl;
 }
 
-void PatronRecord::removeBook(const std::string& isbn) {
-    for (size_t i = 0; i < checkedOutBooks.size(); ++i) {
-        if (checkedOutBooks[i].getISBN() == isbn) {
-            std::cout << "Removed book from patron's record: " << checkedOutBooks[i].getTitle() << std::endl;
-            checkedOutBooks.erase(checkedOutBooks.begin() + i);
-            return;
-        }
-    }
-    std::cout << "Book with ISBN " << isbn << " not found in patron's record"<<std::endl;
-}
-
 std::vector<BookItem> PatronRecord::listCheckedOutBooks() const {
     std::cout << "Checked-out books:"<<std::endl;
     for (const auto& book : checkedOutBooks) {

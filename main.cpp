@@ -19,8 +19,8 @@ int main() {
     library.addBook(book4);
 
     // Add Patrons
-    Patron patron1("Chinaza Ihenacho", "20-01-2025");
-    Patron patron2("king Wesley", "24-01-2025");
+    Patron patron1("Chinaza Ihenacho", "20","09067789975");
+    Patron patron2("king Wesley", "24","0812345678");
 
     library.addPatron(patron1);
     library.addPatron(patron2);

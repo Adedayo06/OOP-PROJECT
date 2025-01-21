@@ -11,7 +11,7 @@ private:
 
 public:
     // Constructor
-    BookItem( const std::string& author, const std::string& isbn);
+    BookItem( const std::string& title,const std::string& author, const std::string& isbn);
 
     // Getters
     void getAuthor(){}; 

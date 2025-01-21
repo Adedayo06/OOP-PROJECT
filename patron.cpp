@@ -3,15 +3,15 @@
 #include <string>
 
 // Constructor
-Patron::Patron(const std::string& name, const std::string& libraryCardNumber)
+Patron::Patron(const std::string& name, const std::string& libraryCardNumber,const std::string& contactInfo)
 : name(name), libraryCardNumber(libraryCardNumber) {}
 
 // Getters
-std::string Patron::getName() const { return name; }
-std::string Patron::getLibraryCardNumber() const { return libraryCardNumber; }
+void getName() {  }
+void getLibraryCardNumber(){}
 
 // Setters
-void Patron::setContactInfo(const std::string& contactInfo) { this->contactInfo = contactInfo; }
+void setContactInfo(const std::string& contactInfo) {} ;
 
 // Additional Functions
 void Patron::updateContactInfo(const std::string& newContactInfo) { setContactInfo(newContactInfo); }

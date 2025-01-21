@@ -25,8 +25,8 @@ private:
     static constexpr double lateFeePerDay = 0.50;
 
 public:
-    BookItem(const std::string& title, const std::string& author, const std::string& isbn, bool isAvailable = true)
-        : LibraryItem(title, isAvailable), author(author), isbn(isbn) {}
+    BookItem(const std::string& title, const std::string& author, const std::string& isbn)
+        : LibraryItem(title), author(author), isbn(isbn) {}
 
     void printDetails() {
         LibraryItem::printDetails();

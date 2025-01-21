@@ -8,7 +8,6 @@ std::vector<BookItem> checkedOutBooks;
 public:
     // Methods
     void addBook(const BookItem& book){};
-    void removeBook(const std::string& isbn){};
     std::vector<BookItem> listCheckedOutBooks() const{};
     int getBorrowedBookCount() const{};
     bool hasOverdueBooks() const{};
